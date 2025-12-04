@@ -2,7 +2,7 @@ import asyncio
 import importlib
 
 from pyrogram import idle
-# from pytgcalls.exceptions import NoActiveGroupCall  # Temporarily disabled
+# from pytgcalls.exceptions import NoActiveGroupCall  # Temporarily disabled due to dependency conflicts
 
 import config
 from ArmedMusic import LOGGER, app, userbot
@@ -37,7 +37,7 @@ async def init():
         importlib.import_module("ArmedMusic.plugins" + all_module)
     LOGGER("ArmedMusic.plugins").info("Successfully Imported Modules...")
     await userbot.start()
-    # Music functions temporarily disabled due to pytgcalls dependency issues
+    # Music features temporarily disabled due to pytgcalls dependency conflicts
     # await Anony.start()
     # try:
     #     await Anony.stream_call("'https://i.ibb.co/gMkk9qC3/image.jpg")
