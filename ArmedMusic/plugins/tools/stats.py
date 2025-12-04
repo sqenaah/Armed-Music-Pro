@@ -6,7 +6,7 @@ from pyrogram import __version__ as pyrover
 from pyrogram import filters
 from pyrogram.errors import MessageIdInvalid
 from pyrogram.types import InputMediaPhoto, Message
-from py_tgcalls.__version__ import __version__ as pytgver
+from pytgcalls.__version__ import __version__ as pytgver
 
 import config
 from ArmedMusic import app

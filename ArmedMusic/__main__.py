@@ -2,7 +2,7 @@ import asyncio
 import importlib
 
 from pyrogram import idle
-from py_tgcalls.exceptions import NoActiveGroupCall
+from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from ArmedMusic import LOGGER, app, userbot

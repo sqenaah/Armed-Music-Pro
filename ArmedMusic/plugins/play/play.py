@@ -3,7 +3,7 @@ import string
 
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, InputMediaPhoto, Message
-from py_tgcalls.exceptions import NoActiveGroupCall
+from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from ArmedMusic import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
