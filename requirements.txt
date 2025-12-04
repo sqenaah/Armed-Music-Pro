@@ -13,8 +13,7 @@ pillow
 psutil
 pykeyboard
 pyrofork
-# py-tgcalls temporarily disabled - mirror not accessible
-# Will add back when alternative source found
+py-tgcalls==2.2.8
 python-dotenv
 pyyaml
 requests
