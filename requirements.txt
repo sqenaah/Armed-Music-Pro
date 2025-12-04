@@ -13,6 +13,7 @@ pillow
 psutil
 pykeyboard
 pyrofork
+pytgcalls
 python-dotenv
 pyyaml
 requests
