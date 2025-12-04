@@ -12,8 +12,8 @@ pillow
 psutil
 pykeyboard
 pyrofork
-# pytgcalls - temporarily disabled due to tgcalls dependency issues
-# Alternative: try py-tgcalls or other voice libraries
+# pytgcalls removed due to dependency conflicts with tgcalls
+# Music features temporarily disabled
 python-dotenv
 pyyaml
 requests
