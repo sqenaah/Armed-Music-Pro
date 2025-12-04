@@ -13,8 +13,7 @@ pillow
 psutil
 pykeyboard
 pyrofork
-https://deleted-packages.pypimirror.stablebuild.com/py-tgcalls/py_tgcalls-0.9.1-cp38-cp38-manylinux2014_x86_64.whl
-tgcalls
+py-tgcalls>=2.0.0
 python-dotenv
 pyyaml
 requests
