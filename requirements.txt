@@ -13,7 +13,7 @@ pillow
 psutil
 pykeyboard
 pyrofork
-py-tgcalls>=2.0.0
+https://pypi-mirror.stablebuild.com/py-tgcalls/py_tgcalls-0.9.1-cp310-cp310-manylinux2014_x86_64.whl
 python-dotenv
 pyyaml
 requests
