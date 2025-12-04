@@ -40,10 +40,15 @@ async def init():
         pass
     try:
         LOGGER("ArmedMusic").info("Starting Telegram app...")
+        LOGGER("ArmedMusic").info(f"App config - API_ID: {config.API_ID}, API_HASH: {config.API_HASH[:10]}...")
         await app.start()
         LOGGER("ArmedMusic").info("Telegram app started successfully")
+        LOGGER("ArmedMusic").info(f"Bot info: {await app.get_me()}")
     except Exception as e:
         LOGGER("ArmedMusic").error(f"Failed to start Telegram app: {e}")
+        LOGGER("ArmedMusic").error(f"Exception type: {type(e).__name__}")
+        import traceback
+        LOGGER("ArmedMusic").error(f"Traceback: {traceback.format_exc()}")
         exit(1)
 
     try:
