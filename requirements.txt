@@ -13,9 +13,8 @@ pillow
 psutil
 pykeyboard
 pyrofork
-# py-tgcalls temporarily disabled due to dependency conflicts
-# Uncomment when fixed:
-# py-tgcalls==0.9.1
+https://deleted-packages.pypimirror.stablebuild.com/py-tgcalls/py_tgcalls-0.9.1-cp38-cp38-manylinux2014_x86_64.whl
+tgcalls
 python-dotenv
 pyyaml
 requests
