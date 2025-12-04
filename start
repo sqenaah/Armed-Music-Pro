@@ -1,0 +1,11 @@
+#!/bin/bash
+
+rm -f *.session* 2>/dev/null
+export $(cat .env | xargs)
+
+while true; do
+    python -m ArmedMusic
+    sleep 5
+    rm -f *.session* 2>/dev/null
+    export $(cat .env | xargs)
+done

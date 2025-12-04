@@ -1,0 +1,37 @@
+.env
+.cache
+log.txt
+.DS_Store
+*.session
+raw_files/
+cache/
+downloads/
+__pycache__/
+*.session-journal
+# Python/Venv
+__pycache__/
+*.py[cod]
+music/
+venv/
+env/
+.env
+sample.env
+
+# Logs and Cache
+log.txt
+*.log
+cache/
+downloads/
+
+# OS/IDE
+.DS_Store
+Thumbs.db
+.idea/
+*.swp
+*.swo
+
+# Build/Deploy
+*.egg-info/
+dist/
+build/
+music310/
