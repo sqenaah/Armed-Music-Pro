@@ -6,7 +6,7 @@ from pyrogram import idle
 
 import config
 from ArmedMusic import LOGGER, app, userbot
-from ArmedMusic.core.call import Anony
+# from ArmedMusic.core.call import Anony  # Temporarily disabled due to pytgcalls dependency
 from ArmedMusic.misc import sudo
 from ArmedMusic.plugins import ALL_MODULES
 from ArmedMusic.utils.database import get_banned_users, get_gbanned
