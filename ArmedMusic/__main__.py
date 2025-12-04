@@ -38,17 +38,28 @@ async def init():
             BANNED_USERS.add(user_id)
     except:
         pass
-    LOGGER("ArmedMusic").info("Starting Telegram app...")
-    await app.start()
-    LOGGER("ArmedMusic").info("Telegram app started successfully")
+    try:
+        LOGGER("ArmedMusic").info("Starting Telegram app...")
+        await app.start()
+        LOGGER("ArmedMusic").info("Telegram app started successfully")
+    except Exception as e:
+        LOGGER("ArmedMusic").error(f"Failed to start Telegram app: {e}")
+        exit(1)
 
-    for all_module in ALL_MODULES:
-        importlib.import_module("ArmedMusic.plugins" + all_module)
-    LOGGER("ArmedMusic.plugins").info("Successfully Imported Modules...")
+    try:
+        for all_module in ALL_MODULES:
+            importlib.import_module("ArmedMusic.plugins" + all_module)
+        LOGGER("ArmedMusic.plugins").info("Successfully Imported Modules...")
+    except Exception as e:
+        LOGGER("ArmedMusic").error(f"Failed to import modules: {e}")
 
-    LOGGER("ArmedMusic").info("Starting userbot...")
-    await userbot.start()
-    LOGGER("ArmedMusic").info("Userbot started successfully")
+    try:
+        LOGGER("ArmedMusic").info("Starting userbot...")
+        await userbot.start()
+        LOGGER("ArmedMusic").info("Userbot started successfully")
+    except Exception as e:
+        LOGGER("ArmedMusic").error(f"Failed to start userbot: {e}")
+        exit(1)
     # Music features temporarily disabled due to pytgcalls dependency conflicts
     # await Anony.start()
     # try:
